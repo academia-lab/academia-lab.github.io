@@ -1,0 +1,82 @@
+.frame {
+    flex-direction: column;
+    max-width: 700px;
+    padding: 0 var(--space);
+    margin-bottom: var(--space);
+    > div {
+        justify-content: center;
+        align-items: center;
+        color: var(--red);
+        margin-top: var(--space);
+        text-transform: uppercase;
+        h2 {
+            font-size: 15px;
+        }
+    }
+    .weekdays {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--gray-0);
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        margin: 0;
+        padding: 0;
+        li {
+            justify-content: center;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid var(--gray-7);
+        }
+    }
+    .schedules {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 10vw);
+        margin: 0;
+        padding: 0;
+        li {
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            border: 1px solid var(--gray-7);
+            cursor: pointer;
+            transition: all .1s ease-in-out;
+            &:hover {
+                background-color: var(--gray-7);
+            }
+            &.active {
+                background-color: var(--red);
+                color: var(--white);
+                &:hover {
+                    background-color: var(--red);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 998px) {
+    .frame {
+        max-width: 998px;
+        > div {
+            margin: var(--space) 0;
+            h2 {
+                font-size: 30px;
+            }
+        }
+        .weekdays {
+            li {
+                font-size: 23px;
+                font-weight: bold;
+            }
+        }
+        .schedules {
+            grid-template-rows: repeat(6, clac(992px /7));
+            li {
+                font-size: 22px;
+            }
+        }
+    }
+}

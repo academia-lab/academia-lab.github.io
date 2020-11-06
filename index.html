@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Academia Musculamento</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png"/>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#1E0B0D">
+    <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#1E0B0D">
+    <meta name="description" content="Academia Musculamento é a academia que visa a integração social e a saúde de todas as pessoas independente do estado atual."/>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
+</head>
+<body>
+    <header id="header">
+
+        <div class="overlay"></div>
+        <a href="index.html#home"><img src="assets/images/svg/logo-top.svg" class="logo" alt="Logotipo"/></a>
+        <button type="button" id="open" aria-label="Abrir">
+            <svg id="menu-black-18dp" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path id="Caminho_215" data-name="Caminho 215" d="M0,0H32V32H0Z" fill="none"/>
+                <path id="Caminho_216" data-name="Caminho 216" d="M3,18H29V16H3Zm0-5H29V11H3ZM3,6V8H29V6Z" transform="translate(0 4)"/>
+            </svg> 
+        </button>
+
+        <div class="menu">
+
+            <button type="button" id="close" aria-label="Fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,0H24V24H0Z" fill="none"/>
+                    <path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"/>
+                </svg>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html#home" aria-label="Home">Home</a></li>
+                    <li><a href="index.html#service" aria-label="Seviços">Serviços</a></li>
+                    <li><a href="index.html#price" aria-label="Preços">Preços</a></li>                    
+                    <li><a href="about.html" aria-label="Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contact.html" aria-label="Contato">Contato</a></li>
+
+                    <li class="hide-guest"><a href="frame.html" aria-label="Agendamentos">Agendamentos</a></li>
+                    <li class="hide-guest"><a href="profile.html" aria-label="Editar Dados">Editar Dados</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer">
+
+                <hr/>
+
+                <div>
+                    <picture>
+                        <a href="profile.html" aria-label="Perfil"><img src="assets/images/users/user.jpg" alt="Fabinho Flauzino"></a>
+                    </picture>
+
+                    <div>
+                        <a href="profile.html" aria-label="Perfil">
+                            <strong>Fabinho Flauzino</strong>
+                            <small>fabioflauzino@com.br</small>
+                        </a>
+                    </div>
+
+                    <button type="button" aria-label="Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="none"/>
+                            <path d="M10.09,15.59,11.5,17l5-5-5-5L10.09,8.41,12.67,11H3v2h9.67ZM19,3H5A2,2,0,0,0,3,
+                                5V9H5V5H19V19H5V15H3v4a2,2,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Z" fill="#333"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <a href="auth.html" class="register" aria-label="Area do Cliente">Área do Cliente</a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main id="home">
+        <header>
+            
+            <h1>O que não te desafia <br/>não te faz mudar</h1>
+            <a href="auth.html" aria-label="Matricule-se">Matricule-se já</a>
+        </header>
+
+        <section class="gallery">
+            <figure>
+                <picture>
+                    <img src="assets/images/home/Crossfit.webp" alt="Crossfit" />
+                </picture>
+                <figcaption>
+                    <h2>Crossfit</h2>
+                </figcaption>
+            </figure>
+       
+            <figure>
+                <picture>
+                    <img src="assets/images/home/musculacao.webp" alt="Musculação" />
+                </picture>
+                <figcaption>
+                    <h2>Musculação</h2>
+                </figcaption>
+            </figure>
+       
+            <figure>
+                <picture>
+                    <img src="assets/images/home/Cardio.webp" alt="Cardio" />
+                </picture>
+                <figcaption>
+                    <h2>Cardio</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <img src="assets/images/home/Ginastica.webp" alt="Ginastica" />
+                </picture>
+                <figcaption>
+                    <h2>Ginástica</h2>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="service">
+            <header>
+                <h2>Programas de treinamento
+                    <small>Treine com especialistas</small>
+                </h2>
+            </header>
+    
+            <div class="wrap">
+                <div>
+                    <figure>
+                        <picture>
+                            <img src="assets/images/home/Aerobica.png" alt="Aerobica" />
+                        </picture>
+                        <figcaption>
+                            <h2>Aeróbica</h2>
+                        </figcaption>
+                    </figure>
+    
+                    <figure>
+                        <picture>
+                            <img src="assets/images/home/Cross.png" alt="Resistencia" />
+                        </picture>
+                        <figcaption>
+                            <h2>Resistencia</h2>
+                        </figcaption>
+                    </figure>
+    
+                    <figure>
+                        <picture>
+                            <img src="assets/images/home/Boxe.png" alt="Boxe" />
+                        </picture>
+                        <figcaption>
+                            <h2>Boxe</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div>
+                    <figure>
+                        <picture>
+                            <img src="assets/images/home/Treino.png" alt="Acompanhamento" />
+                        </picture>
+                        <figcaption>
+                            <h2>Acompanhamento de desempenho</h2>
+                        </figcaption>
+                    </figure>
+    
+                    <figure>
+                        <picture>
+                            <img src="assets/images/home/Yoga.png" alt="Yoga" />
+                        </picture>
+                        <figcaption>
+                            <h2>Yoga</h2>
+                        </figcaption>
+                    </figure>
+    
+                    <figure>
+                        <picture>
+                            <img src="assets/images/home/Treino1.png" alt="Preparo Fisico" />
+                        </picture>
+                        <figcaption>
+                            <h2>Preparo Fisico</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+
+            <a href="frame.html" aria-label="Escolha Horário">Escolha seus Horarios</a>
+        </section>
+
+        <section id="price">
+            <header>
+                <h2>
+                    Encontre o plano perfeito
+                </h2>
+            </header>
+
+            <div class="wrap">
+
+                <div class="plans">
+                    <div class="plan-month">
+                        <h2>Plano Mensal</h2>
+                    </div>
+    
+                    <div class="price">
+                        R$ <br /><strong>69,90</strong>por Mês 
+                    </div>
+    
+                    <div class="list">
+                        <ul>
+                            <li>Hidromassagem</li>
+                            <li>Musculação</li>
+                            <li>Ginástica</li>
+                            <li>Saúna</li>
+                            <li>Boxe</li>
+                            <li>Yoga</li>
+                        </ul>
+                    </div>
+                    <a href="#price" aria-label="Escolher Plano">Escolher Plano</a>
+                </div>
+
+                <div class="plans">
+                    <div class="plan-month">
+                        <h2>Plano Semestral</h2>
+                    </div>
+    
+                    <div class="price">
+                        R$ <br /><strong>59,90</strong>por Mês 
+                    </div>
+    
+                    <div class="list">
+                        <ul>
+                            <li>Hidromassagem</li>
+                            <li>Musculação</li>
+                            <li>Ginástica</li>
+                            <li>Spinning</li>
+                            <li>Jiu-Jitsu</li>
+                            <li>Saúna</li>
+                            <li>Boxe</li>
+                            <li>Yoga</li>
+                        </ul>
+                    </div>
+                    <a href="#price" aria-label="Escolher Plano">Escolher Plano</a>
+                </div>
+
+                <div class="plans">
+                    <div class="plan-month">
+                        <h2>Plano Anual</h2>
+                    </div>
+    
+                    <div class="price">
+                        R$ <br /><strong>49,90</strong>por Mês 
+                    </div>
+    
+                    <div class="list">
+                        <ul>
+                            <li>Personal Trainner</li>
+                            <li>Defesa Pessoal</li>
+                            <li>Hidromassagem</li>
+                            <li>Musculação</li>
+                            <li>Ginástica</li>
+                            <li>Spinning</li>
+                            <li>Jiu-Jitsu</li>
+                            <li>Saúna</li>
+                            <li>Boxe</li>
+                            <li>Yoga</li>
+                        </ul>
+                    </div>
+                    <a href="#price" aria-label="Ecolher Plano">Escolher Plano</a>
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="contacts">
+            <ul>
+                <li>
+                    <img src="assets/images/svg/bate-papo.svg" alt="Icon"/>
+                    <p class="title">Envie um Whatsapp ou Telegram</p>
+                    <p>(23) 99456 7890</p>
+                </li>
+                <li>
+                    <img src="assets/images/svg/localizacao.svg" alt="Icon"/>
+                    <p class="title">Nossa Localização</p>
+                    <p>Rua Alguma 40, Lugar Nenhum-SP</p>
+                </li>
+                <li>
+                    <img src="assets/images/svg/telefone.svg" alt="Icon"/>
+                    <p class="title">Tire suas Duvidas por Telefone</p>
+                    <p>(12) 3450 6789</p>
+                </li>
+                <li>
+                    <img src="assets/images/svg/o-email.svg" alt="Icon"/>
+                    <p class="title">Nosso serviço de atendimento</p>
+                    <p>contato@musculamento.com</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+
+        <div class="columns">
+            <div>
+                <ul class="links">
+                    <li class="title">Links</li>
+                    <li><a href="index.html#home" aria-label="Home">Home</a></li>
+                    <li><a href="index.html#service" aria-label="Seviços">Serviços</a></li>
+                    <li><a href="index.html#price" aria-label="Preços">Preços</a></li>                    
+                    <li><a href="about.html" aria-label="Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contact.html" aria-label="Contato">Contato</a></li>
+                </ul>
+                <ul>
+                    <li class="title">Contato</li>
+                    <li>E-mail:&nbsp;<a href="mailto:contato@musculamento.com" aria-label="Email">contato@musculamento.com</a></li>
+                    <li class="social">
+                        <a href="#" aria-label=""><img src="assets/images/svg/facebook.svg" alt="Facebook" /></a>
+                        <a href="#" aria-label=""><img src="assets/images/svg/twitter.svg" alt="Twitter" /></a>
+                        <a href="#" aria-label=""><img src="assets/images/svg/youtube.svg" alt="Youtube" /></a>
+                        <a href="#" aria-label=""><img src="assets/images/svg/instagram.svg" alt="Instagram" /></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="index.html#home" class="logo" aria-label="Home">
+                <a href="index.html#home" aria-label="Home"><img src="assets/images/svg/logo-top.svg" class="logo" alt="Logotipo"/></a>
+            </a>
+        </div>
+        <p>2020 © Academia Musculamento. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "academia-musculamento-1.0",
+    "version": "1.0.0",
+    "description": "Uma academia completa para você e seu corpo se sentirem bem.",
+    "main": "inidex.js",
+    "scripts": {
+        "sass": "sass --watch assets/sass/main.scss:assets/css/main.css"
+    },
+    "keywords": [],
+    "author": "Fabinho Flauzino",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.26.11"
+    }
+}
