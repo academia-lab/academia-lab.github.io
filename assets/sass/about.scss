@@ -1,10 +1,23 @@
 #about {
+    overflow: scroll;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    min-height: 675px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/home/home1.webp');
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
     flex-direction: column;
     header{
         justify-content: center;
         h2 {
             font-size: 40px;
-            color: var(--red-dark);
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--white);
         }
     }
     .wrap{
@@ -13,12 +26,16 @@
             flex-direction: column;
             align-items: center;
             span {
-                font-size: 16px;
+                font-size: 20px;
+                text-align: center;
+                color: var(--white);
                 margin: var(--space);  
             }
             h3 {
-                font-size: 24px;
+                font-size: 30px;
+                color: var(--white);
                 font-weight: bold;
+                text-transform: uppercase;
             }
         }
         img {
@@ -28,7 +45,7 @@
 }
 @media (min-width:1200px) {
     #about {
-        margin: var(--space);
+        overflow: hidden;
         .wrap{
             flex-direction: row;
             > div {

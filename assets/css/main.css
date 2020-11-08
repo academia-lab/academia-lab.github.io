@@ -885,9 +885,9 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   min-width: 320px;
   min-height: 675px;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/home/ImagemPlano.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home/fitness.webp");
   background-size: cover;
-  background-position-x: 60%;
+  background-position-x: 50%;
   background-position-y: center;
   background-repeat: no-repeat;
   flex-direction: column;
@@ -897,7 +897,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 }
 #home > header h1 {
   color: var(--white);
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -960,9 +960,10 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 @media (min-width: 450px) {
   #home > header {
     max-height: initial;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/home/home1.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/home/fitness.webp");
   }
   #home > header h1 {
+    font-size: 55px;
     margin: var(--space);
   }
   #home > header a {
@@ -1008,6 +1009,8 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 }
 #service .wrap {
   flex-direction: column;
+  margin: var(--space);
+  padding: var(--space);
 }
 #service .wrap div {
   flex-direction: column;
@@ -1021,7 +1024,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   justify-content: center;
 }
 #service .wrap figure picture img {
-  width: 95%;
+  width: 90%;
   filter: brightness(70%);
 }
 #service .wrap figure figcaption h2 {
@@ -1050,7 +1053,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   color: var(--white);
   background-color: var(--red-dark);
   text-align: center;
-  margin: calc(2 * var(--space)) 0;
+  margin: var(--space) 0;
 }
 #service a:hover {
   background-color: var(--black-10);
@@ -1059,7 +1062,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   background-color: var(--black-75);
 }
 #service a:hover {
-  background-color: var(--red-dark);
+  background-color: var(--red);
 }
 
 @media (min-width: 992px) {
@@ -1074,6 +1077,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
   #service .wrap {
     flex-direction: column;
+    padding: var(--space) 160px;
   }
   #service .wrap div {
     flex-direction: row;
@@ -1093,13 +1097,13 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   min-height: 675px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home/ImagemPlano.webp");
   background-size: cover;
-  background-position-x: 45%;
+  background-position-x: 50%;
   background-position-y: center;
   background-repeat: no-repeat;
 }
 #price > header {
   flex-direction: column;
-  margin: calc(2 * var(--space));
+  margin: calc(2 * var(--space)) 0;
 }
 #price > header h2 {
   font-size: 24px;
@@ -1108,7 +1112,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   justify-content: center;
   text-align: center;
   color: var(--white);
-  margin-bottom: 10px;
+  margin: 0;
 }
 #price > header h2 small {
   margin: var(--space) 0;
@@ -1119,14 +1123,15 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 }
 #price .wrap {
   flex-direction: column;
+  margin: 0 calc(var(--space) * 2);
 }
 #price .wrap .plans {
   flex-direction: column;
   align-self: center;
   background-color: var(--white);
-  width: 70%;
+  width: 100%;
   max-width: 500px;
-  margin: var(--space);
+  margin: var(--space) 0;
   border-radius: var(--border-radius);
 }
 #price .wrap .plans .plan-month {
@@ -1225,6 +1230,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
   #price .wrap {
     flex-direction: row;
+    padding: 0 100px;
   }
   #price .wrap .plans {
     height: 600px;
@@ -1504,6 +1510,17 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
 }
 #about {
+  overflow: scroll;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  min-height: 675px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home/home1.webp");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
   flex-direction: column;
 }
 #about header {
@@ -1511,7 +1528,9 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 }
 #about header h2 {
   font-size: 40px;
-  color: var(--red-dark);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
 }
 #about .wrap {
   flex-direction: column;
@@ -1521,12 +1540,16 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   align-items: center;
 }
 #about .wrap > div span {
-  font-size: 16px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
   margin: var(--space);
 }
 #about .wrap > div h3 {
-  font-size: 24px;
+  font-size: 30px;
+  color: var(--white);
   font-weight: bold;
+  text-transform: uppercase;
 }
 #about .wrap img {
   width: 100%;
@@ -1534,7 +1557,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 
 @media (min-width: 1200px) {
   #about {
-    margin: var(--space);
+    overflow: hidden;
   }
   #about .wrap {
     flex-direction: row;

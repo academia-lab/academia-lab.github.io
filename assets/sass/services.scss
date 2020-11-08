@@ -25,6 +25,8 @@
     }
     .wrap {
         flex-direction: column;
+        margin: var(--space);
+        padding: var(--space);
         div {
             flex-direction: column;
         }
@@ -35,7 +37,7 @@
                 display: flex;
                 justify-content: center;
                 img {
-                    width: 95%;
+                    width: 90%;
                     filter: brightness(70%);
                 }
             }
@@ -55,9 +57,9 @@
         color: var(--white);
         background-color: var(--red-dark);
         text-align: center;
-        margin: calc(2 * var(--space)) 0;
+        margin: var(--space) 0;
         &:hover {
-            background-color: var(--red-dark);
+            background-color: var(--red);
         }
     }
 }
@@ -75,6 +77,7 @@
        }
        .wrap {
            flex-direction: column;
+           padding: var(--space) 160px;
            div {
                flex-direction: row;
            }

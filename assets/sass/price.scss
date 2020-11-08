@@ -5,12 +5,12 @@
     min-height: 675px;
     background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/home/ImagemPlano.webp');
     background-size: cover;
-    background-position-x: 45%;
+    background-position-x: 50%;
     background-position-y: center;
     background-repeat: no-repeat;
     > header {
         flex-direction: column;
-        margin: calc(2 * var(--space));
+        margin: calc(2 * var(--space)) 0;
         h2 {
             font-size: 24px;
             font-weight: bold;
@@ -18,7 +18,7 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            margin-bottom: 10px;
+            margin: 0;
             small {
                 margin: var(--space) 0;
                 text-align: center;
@@ -30,13 +30,14 @@
     }
     .wrap {
         flex-direction: column;
+        margin: 0 calc(var(--space) * 2);
         .plans {
             flex-direction: column;
             align-self: center;
             background-color: var(--white);
-            width: 70%;
+            width: 100%;
             max-width: 500px;
-            margin: var(--space);
+            margin: var(--space) 0;
             border-radius: var(--border-radius);
             .plan-month {
                 justify-content: center;
@@ -121,6 +122,7 @@
         }
         .wrap {
             flex-direction: row;
+            padding: 0 100px;
             .plans {
                 height: 600px;
                 margin: 60px;
