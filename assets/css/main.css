@@ -1715,7 +1715,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 998px) {
   .testimony header h2 {
     font-size: 40px;
   }
