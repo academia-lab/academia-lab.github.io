@@ -5,10 +5,9 @@
     min-width: 320px;
     min-height: 675px;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/home/home1.webp');
+    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url('../images/home/dumbbell.webp');
     background-size: cover;
-    background-position-x: 50%;
-    background-position-y: center;
+    background-position-y: 20%;
     background-repeat: no-repeat;
     flex-direction: column;
     header{
@@ -22,20 +21,36 @@
     }
     .wrap{
         flex-direction: column;
-        > div {
+        > span {
+            color: var(--white);
+            margin: var(--space);
+            padding: var(--space);
+            text-align: center;
+            font-size: 26px;
+        }
+        .content {
             flex-direction: column;
             align-items: center;
-            span {
-                font-size: 20px;
+            div {
+                flex-direction: column;
                 text-align: center;
-                color: var(--white);
-                margin: var(--space);  
-            }
-            h3 {
-                font-size: 30px;
-                color: var(--white);
-                font-weight: bold;
-                text-transform: uppercase;
+                background-color: white;
+                margin: 20px;
+                border-radius: 5px;
+                padding: 10px;
+                span {
+                    font-size: 20px;
+                    text-align: center;
+                    color: var(--red-dark);
+                    margin: var(--space);  
+                }
+                h3 {
+                    font-size: 30px;
+                    color: var(--white);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: var(--red);
+                }
             }
         }
         img {
@@ -46,20 +61,31 @@
 @media (min-width:1200px) {
     #about {
         overflow: hidden;
+        padding-top: calc(var(--space) * 4);
         .wrap{
-            flex-direction: row;
-            > div {
-                flex-direction: column;
-                align-items: center;
-                span {
-                    font-size: 16px;
-                    margin: var(--space); 
-                    align-items: center;
-                    width: 40%; 
-                }
-                h3 {
-                    font-size: 24px;
-                    font-weight: bold;
+            flex-direction: column;
+            .content {
+                flex-direction: row;
+                div {
+                    flex-direction: column;
+                    text-align: center;
+                    background-color: white;
+                    margin: 20px;
+                    border-radius: 5px;
+                    padding: 10px;
+                    span {
+                        font-size: 20px;
+                        text-align: center;
+                        color: var(--red-dark);
+                        margin: var(--space);  
+                    }
+                    h3 {
+                        font-size: 30px;
+                        color: var(--white);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: var(--red);
+                    }
                 }
             }
             img {

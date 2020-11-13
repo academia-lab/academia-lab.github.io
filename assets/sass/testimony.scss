@@ -1,0 +1,97 @@
+.testimony {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: calc(var(--space) * 4) 0;
+    header {
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--red-dark);
+        }
+    }
+    .wrap {
+        margin: var(--space);
+        padding: var(--space);
+        border-radius: var(--border-radius);
+        flex-direction: column;
+        background-color: whitesmoke;
+        .box-testimony {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 50%;
+                border: 1px solid var(--red);
+                border-radius: 10px;
+            }
+            h3, p {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: var(--space);
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+        .declaration {
+            margin-top: var(--space);
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimony {
+        header {
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .wrap {
+            margin: 0 calc(var(--space) * 4) ;
+            padding: 80px;
+            border-radius: var(--border-radius);
+            flex-direction: column;
+            background-color: whitesmoke;
+            max-width: 1300px;
+            .box-testimony {
+                img {
+                    width: 40%;
+                    border: 1px solid var(--red);
+                }
+                h3, p {
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+                h3 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-top: var(--space);
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            .declaration {
+                margin-top: var(--space);
+                p {
+                    padding: 0 30px;
+                    font-size: 22px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+}

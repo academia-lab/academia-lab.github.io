@@ -900,6 +900,12 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
+  font-weight: bold;
+}
+#home > header p {
+  color: var(--white);
+  font-size: 24px;
+  text-transform: uppercase;
 }
 #home > header a {
   min-width: 130px;
@@ -964,6 +970,10 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
   #home > header h1 {
     font-size: 55px;
+    margin: var(--space);
+  }
+  #home > header p {
+    font-size: 30px;
     margin: var(--space);
   }
   #home > header a {
@@ -1219,6 +1229,9 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 }
 
 @media (min-width: 992px) {
+  #price > header {
+    margin-top: calc(var(--space) * 5);
+  }
   #price > header h2 {
     font-size: 32px;
   }
@@ -1415,6 +1428,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 }
 #page-contact {
   flex-direction: column;
+  align-self: center;
 }
 #page-contact > h2 {
   font-size: 27px;
@@ -1516,10 +1530,9 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   min-width: 320px;
   min-height: 675px;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home/home1.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/home/dumbbell.webp");
   background-size: cover;
-  background-position-x: 50%;
-  background-position-y: center;
+  background-position-y: 20%;
   background-repeat: no-repeat;
   flex-direction: column;
 }
@@ -1535,21 +1548,37 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 #about .wrap {
   flex-direction: column;
 }
-#about .wrap > div {
+#about .wrap > span {
+  color: var(--white);
+  margin: var(--space);
+  padding: var(--space);
+  text-align: center;
+  font-size: 26px;
+}
+#about .wrap .content {
   flex-direction: column;
   align-items: center;
 }
-#about .wrap > div span {
+#about .wrap .content div {
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+#about .wrap .content div span {
   font-size: 20px;
   text-align: center;
-  color: var(--white);
+  color: var(--red-dark);
   margin: var(--space);
 }
-#about .wrap > div h3 {
+#about .wrap .content div h3 {
   font-size: 30px;
   color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
+  color: var(--red);
 }
 #about .wrap img {
   width: 100%;
@@ -1558,23 +1587,34 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 @media (min-width: 1200px) {
   #about {
     overflow: hidden;
+    padding-top: calc(var(--space) * 4);
   }
   #about .wrap {
+    flex-direction: column;
+  }
+  #about .wrap .content {
     flex-direction: row;
   }
-  #about .wrap > div {
+  #about .wrap .content div {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
   }
-  #about .wrap > div span {
-    font-size: 16px;
+  #about .wrap .content div span {
+    font-size: 20px;
+    text-align: center;
+    color: var(--red-dark);
     margin: var(--space);
-    align-items: center;
-    width: 40%;
   }
-  #about .wrap > div h3 {
-    font-size: 24px;
+  #about .wrap .content div h3 {
+    font-size: 30px;
+    color: var(--white);
     font-weight: bold;
+    text-transform: uppercase;
+    color: var(--red);
   }
   #about .wrap img {
     width: 100%;
@@ -1623,6 +1663,94 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 @media (min-width: 992px) {
   .contacts ul {
     flex-direction: row;
+  }
+}
+.testimony {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: calc(var(--space) * 4) 0;
+}
+.testimony header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--red-dark);
+}
+.testimony .wrap {
+  margin: var(--space);
+  padding: var(--space);
+  border-radius: var(--border-radius);
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.testimony .wrap .box-testimony {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimony .wrap .box-testimony img {
+  width: 50%;
+  border: 1px solid var(--red);
+  border-radius: 10px;
+}
+.testimony .wrap .box-testimony h3, .testimony .wrap .box-testimony p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.testimony .wrap .box-testimony h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: var(--space);
+}
+.testimony .wrap .box-testimony p {
+  font-size: 17px;
+}
+.testimony .wrap .declaration {
+  margin-top: var(--space);
+}
+.testimony .wrap .declaration p {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .testimony header h2 {
+    font-size: 40px;
+  }
+  .testimony .wrap {
+    margin: 0 calc(var(--space) * 4);
+    padding: 80px;
+    border-radius: var(--border-radius);
+    flex-direction: column;
+    background-color: whitesmoke;
+    max-width: 1300px;
+  }
+  .testimony .wrap .box-testimony img {
+    width: 40%;
+    border: 1px solid var(--red);
+  }
+  .testimony .wrap .box-testimony h3, .testimony .wrap .box-testimony p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .testimony .wrap .box-testimony h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: var(--space);
+  }
+  .testimony .wrap .box-testimony p {
+    font-size: 20px;
+  }
+  .testimony .wrap .declaration {
+    margin-top: var(--space);
+  }
+  .testimony .wrap .declaration p {
+    padding: 0 30px;
+    font-size: 22px;
+    text-align: center;
   }
 }
 

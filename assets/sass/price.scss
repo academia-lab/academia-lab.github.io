@@ -110,6 +110,7 @@
 @media (min-width:992px) {
     #price {
         > header {
+            margin-top: calc(var(--space) * 5);
             h2 {
                 font-size: 32px;
                 small {
