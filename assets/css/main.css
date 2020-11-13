@@ -967,6 +967,13 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
 #home > header a:hover {
   background-color: var(--red);
 }
+#home .canto {
+  position: fixed;
+  right: var(--space);
+  bottom: var(--space);
+  width: 45px;
+  z-index: 10;
+}
 #home .gallery {
   min-width: 320px;
   flex-direction: column;
