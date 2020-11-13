@@ -101,12 +101,22 @@
             @include button-default;
 
         }
-        button[type=submit], a.black {
+        button[type=button], a.black {
             @include button-black;
         }
 
-        button[type=button] {
+        button[type=submit] {
             @include button-green;
+        }
+        a {
+            @include button;
+            width: 190px;
+            border: var(--red) 2px solid;
+            color: var(--white);
+            background-color: var(--red-dark);
+            &:hover {
+                background-color: var(--red);
+            }
         }
     }
     &.blue {
