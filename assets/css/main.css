@@ -1723,7 +1723,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
     margin: 0 calc(var(--space) * 4);
     padding: 80px;
     border-radius: var(--border-radius);
-    flex-direction: column;
+    flex-direction: column-reverse;
     background-color: whitesmoke;
     max-width: 1300px;
   }
