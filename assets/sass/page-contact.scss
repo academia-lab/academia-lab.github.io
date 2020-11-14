@@ -1,6 +1,9 @@
 #page-contact {
+    overflow: scroll;
     flex-direction: column;
     align-self: center;
+    background-color: var(--gray-10);
+    margin-top: -100px;
     > h2 {
         font-size: 27px;
         font-weight: bold;
@@ -8,6 +11,7 @@
         text-align: center;
         text-transform: uppercase;
         margin: calc(2 * var(--space)) 0;
+        margin-top: 130px;
         padding: 0 var(--space);
     }
     > section {
@@ -31,8 +35,8 @@
         }
     }
     .image {
-        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/home/home2.webp');
-        background-position-x: 55%;
+        background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/img6.jpg');
+        background-position-x: 50%;
         background-position-y: 35%;
         height: 250px;
         width: 100%;
@@ -42,8 +46,11 @@
 
 @media (min-width: 600px) {
     #page-contact {
-        max-width: 1200px;
-        margin: 50px;
+        overflow: hidden;
+        width: 100%;
+        padding: 150px;
+        padding-top: 40px;
+        margin-top: -100px;
         > h2 {
             font-size: 40px;
         }

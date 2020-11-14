@@ -23,7 +23,7 @@
             display: contents;
             img {
                 position: absolute;
-                width: 250px;
+                width: 75%;
                 top: 40px;
                 z-index: 1;
             }
@@ -81,6 +81,7 @@
             a {
                 img {
                     top: 90px;
+                    width: 50%;
                 }
             }
             form {
