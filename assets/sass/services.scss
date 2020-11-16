@@ -55,15 +55,16 @@
         }
     }
     a {
-        @include button;
-        width: 240px;
-        border: var(--red) 1px solid;
-        color: var(--white);
-        background-color: var(--red-dark);
-        text-align: center;
         margin: var(--space) 0;
+        @include button-default;
+        height: 70px;
+        width: 240px;
+        color: var(--white);
+        background-color: var(--red);
+        border: 1px solid var(--red-dark);
         &:hover {
-            background-color: var(--red);
+            background-color: var(--red-dark);
+            border: 1px solid var(--red);
         }
     }
 }

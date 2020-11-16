@@ -2,7 +2,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: calc(var(--space) * 2);
+    margin: (var(--space));
     header {
         h2 {
             font-size: 22px;
@@ -59,7 +59,7 @@
         }
         .wrap {
             margin: 0 calc(var(--space) * 3) ;
-            padding: var(--space) 0;
+            padding: var(--space) 150px;
             border-radius: var(--border-radius);
             flex-direction: column-reverse;
             background-color: whitesmoke;

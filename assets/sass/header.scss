@@ -115,9 +115,16 @@
         }
         .register {
             margin: 20px;
-            @include button-white;
+            @include button-default;
             height: 70px;
             width: 200px;
+            color: var(--white);
+            background-color: var(--red);
+            border: 1px solid var(--red-dark);
+            &:hover {
+                background-color: var(--red-dark);
+                border: 1px solid var(--red);
+            }
         }
         
     }

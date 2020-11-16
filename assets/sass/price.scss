@@ -94,12 +94,14 @@
                 @include button;
                 width: 190px;
                 color: var(--white);
-                background-color: var(--red-dark);
+                background-color: var(--red);
+                border: 1px solid var(--red-dark);
                 text-align: center;
                 margin: calc(2 * var(--space)) 0;
                 align-self: center;
                 &:hover {
-                    background-color: var(--red);
+                    background-color: var(--red-dark);
+                    border: 1px solid var(--red);
                 }
             }
         }
@@ -126,7 +128,7 @@
             padding: 0 100px;
             .plans {
                 height: 600px;
-                margin: 60px;
+                margin: 20px;
             }
         }
     }

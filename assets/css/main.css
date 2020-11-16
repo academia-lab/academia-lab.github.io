@@ -25,7 +25,7 @@
   --red: #c20a19e7;
   --red-hover: #E4423B;
   --red-active: #C91D16;
-  --red-dark: #250202;
+  --red-dark: #5c0202;
   --green: #00994D;
   --green-hover: #00BE60;
   --green-active: #00773C;
@@ -634,10 +634,13 @@ a {
   border-radius: var(--border-radius);
   background: transparent;
   color: var(--black);
-  background-color: var(--white);
-  color: var(--red-dark);
+  background-color: var(--gray-3);
+  color: var(--gray-0);
   height: 70px;
   width: 200px;
+  color: var(--white);
+  background-color: var(--red);
+  border: 1px solid var(--red-dark);
 }
 #header .menu .register:hover {
   background-color: var(--black-10);
@@ -646,10 +649,14 @@ a {
   background-color: var(--black-75);
 }
 #header .menu .register:hover {
-  background-color: var(--gray-3);
+  background-color: var(--gray-hover);
 }
 #header .menu .register:active {
-  background-color: var(--gray-0);
+  background-color: var(--gray-active);
+}
+#header .menu .register:hover {
+  background-color: var(--red-dark);
+  border: 1px solid var(--red);
 }
 #header button {
   background: none;
@@ -921,7 +928,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   min-width: 320px;
   min-height: 675px;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home/fitness.webp");
+  background-image: url("../images/home/fitness.webp");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: center;
@@ -931,19 +938,30 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   justify-content: center;
   padding: var(--space);
 }
-#home > header h1 {
+#home > header div {
+  margin-top: 80px;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: var(--border-radius);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#home > header div h1 {
   color: var(--white);
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
-#home > header p {
+#home > header div p {
   color: var(--white);
+  text-align: center;
   font-size: 24px;
   text-transform: uppercase;
 }
-#home > header a {
+#home > header div a {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -959,19 +977,29 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   border-radius: var(--border-radius);
   background: transparent;
   color: var(--black);
-  width: 190px;
-  border: var(--red) 2px solid;
+  background-color: var(--gray-3);
+  color: var(--gray-0);
+  height: 70px;
+  width: 200px;
   color: var(--white);
-  background-color: var(--red-dark);
+  background-color: var(--red);
+  border: 1px solid var(--red-dark);
 }
-#home > header a:hover {
+#home > header div a:hover {
   background-color: var(--black-10);
 }
-#home > header a:active {
+#home > header div a:active {
   background-color: var(--black-75);
 }
-#home > header a:hover {
-  background-color: var(--red);
+#home > header div a:hover {
+  background-color: var(--gray-hover);
+}
+#home > header div a:active {
+  background-color: var(--gray-active);
+}
+#home > header div a:hover {
+  background-color: var(--red-dark);
+  border: 1px solid var(--red);
 }
 #home .canto {
   position: fixed;
@@ -1025,18 +1053,22 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
   #home > header {
     max-height: initial;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home/fitness.webp");
+    background-image: url("../images/home/fitness.webp");
   }
-  #home > header h1 {
+  #home > header div {
+    align-items: flex-start;
+  }
+  #home > header div h1 {
     font-size: 55px;
     margin: var(--space);
     padding-top: 100px;
+    text-align: start;
   }
-  #home > header p {
+  #home > header div p {
     font-size: 30px;
     margin: var(--space);
   }
-  #home > header a {
+  #home > header div a {
     margin: var(--space);
   }
   #home .gallery {
@@ -1121,6 +1153,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   color: var(--red-dark);
 }
 #service a {
+  margin: var(--space) 0;
   min-width: 130px;
   border: none;
   height: 50px;
@@ -1136,12 +1169,13 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   border-radius: var(--border-radius);
   background: transparent;
   color: var(--black);
+  background-color: var(--gray-3);
+  color: var(--gray-0);
+  height: 70px;
   width: 240px;
-  border: var(--red) 1px solid;
   color: var(--white);
-  background-color: var(--red-dark);
-  text-align: center;
-  margin: var(--space) 0;
+  background-color: var(--red);
+  border: 1px solid var(--red-dark);
 }
 #service a:hover {
   background-color: var(--black-10);
@@ -1150,7 +1184,14 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   background-color: var(--black-75);
 }
 #service a:hover {
-  background-color: var(--red);
+  background-color: var(--gray-hover);
+}
+#service a:active {
+  background-color: var(--gray-active);
+}
+#service a:hover {
+  background-color: var(--red-dark);
+  border: 1px solid var(--red);
 }
 
 @media (min-width: 992px) {
@@ -1291,7 +1332,8 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   color: var(--black);
   width: 190px;
   color: var(--white);
-  background-color: var(--red-dark);
+  background-color: var(--red);
+  border: 1px solid var(--red-dark);
   text-align: center;
   margin: calc(2 * var(--space)) 0;
   align-self: center;
@@ -1303,7 +1345,8 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   background-color: var(--black-75);
 }
 #price .wrap .plans a:hover {
-  background-color: var(--red);
+  background-color: var(--red-dark);
+  border: 1px solid var(--red);
 }
 
 @media (min-width: 992px) {
@@ -1325,7 +1368,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
   #price .wrap .plans {
     height: 600px;
-    margin: 60px;
+    margin: 20px;
   }
 }
 #auth {
@@ -1333,7 +1376,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   min-width: 320px;
   min-height: 675px;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home/home2.webp");
+  background-image: url("../images/home/home2.webp");
   background-size: cover;
   background-position-x: 60%;
   background-position-y: center;
@@ -1611,13 +1654,18 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   justify-content: center;
   font-size: 20px;
   color: var(--white);
-  background-color: var(--red-dark);
+  background-color: var(--red);
+  border: solid 1px var(--red-dark);
 }
 #page-contact > section .actions button:hover {
   background-color: var(--black-10);
 }
 #page-contact > section .actions button:active {
   background-color: var(--black-75);
+}
+#page-contact > section .actions button:hover {
+  background-color: var(--red-dark);
+  border: solid 1px var(--red);
 }
 #page-contact .image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/img6.jpg");
@@ -1811,7 +1859,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: calc(var(--space) * 2);
+  margin: var(--space);
 }
 .testimony header h2 {
   font-size: 22px;
@@ -1863,7 +1911,7 @@ form .field input[type=date], form .field textarea[type=date], form .field selec
   }
   .testimony .wrap {
     margin: 0 calc(var(--space) * 3);
-    padding: var(--space) 0;
+    padding: var(--space) 150px;
     border-radius: var(--border-radius);
     flex-direction: column-reverse;
     background-color: whitesmoke;

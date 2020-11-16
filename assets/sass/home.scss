@@ -6,7 +6,7 @@
         min-width: 320px;
         min-height: 675px;
         height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/home/fitness.webp');
+        background-image: url('../images/home/fitness.webp');
         background-size: cover;
         background-position-x: 50%;
         background-position-y: center;
@@ -15,26 +15,39 @@
         align-items: flex-start;
         justify-content: center;
         padding: var(--space);
-        h1 {
-            color: var(--white);
-            font-size: 45px;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        p {
-            color: var(--white);
-            font-size: 24px;
-            text-transform: uppercase;
-        }
-        a {
-            @include button;
-            width: 190px;
-            border: var(--red) 2px solid;
-            color: var(--white);
-            background-color: var(--red-dark);
-            &:hover {
+        div {
+            margin-top: 80px;
+            flex-direction: column;
+            background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4));
+            border-radius: var(--border-radius);
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                color: var(--white);
+                font-size: 45px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+            }
+            p {
+                color: var(--white);
+                text-align: center;
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+            a {
+                @include button-default;
+                height: 70px;
+                width: 200px;
+                color: var(--white);
                 background-color: var(--red);
+                border: 1px solid var(--red-dark);
+                &:hover {
+                    background-color: var(--red-dark);
+                    border: 1px solid var(--red);
+                }
             }
         }
     }
@@ -90,19 +103,23 @@
         background-color: var(--gray-5);
         > header {
             max-height: initial;
-            background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .4)), url('../images/home/fitness.webp');
-            h1 {
-                font-size: 55px;
-                margin: var(--space);
-                padding-top: 100px;
+            background-image: url('../images/home/fitness.webp');
+            div {
+                align-items: flex-start;
+                h1 {
+                    font-size: 55px;
+                    margin: var(--space);
+                    padding-top: 100px;
+                    text-align: start;
+                }
+                p {
+                    font-size: 30px;
+                    margin: var(--space);
+                }
+                a {
+                    margin: var(--space);
+                }  
             }
-            p {
-                font-size: 30px;
-                margin: var(--space);
-            }
-            a {
-                margin: var(--space);
-            }  
         }
         .gallery {
             display: flex;
