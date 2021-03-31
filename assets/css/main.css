@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu Regular"), url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu Bold"), url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Nothing";
+  src: local("Nothing You Cold Do"), url("../fonts/NothingYouCouldDo-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Teko";
+  src: local("Teko"), url("../fonts/Teko-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
 :root {
   --white: #FFF;
   --black: #000;
